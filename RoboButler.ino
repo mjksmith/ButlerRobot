@@ -89,7 +89,7 @@ double getPIDInput(uint8_t raw[]) {
   mpu.dmpGetGravity(&gravityVec, &quart);
   mpu.dmpGetYawPitchRoll(yawPitchRoll, &quart, &gravityVec);
   return yawPitchRoll[1] * 180/M_PI + 180;
-  /* THIS COMMENT INDICATES THE END OF PROGRAM CODE WRITTEN BY JEFF ROWBERG */    
+  /* THIS COMMENT INDICATES THE END OF PROGRAM CODE WRITTEN BY LUKA GABRIC */    
 }
 
 void handleInterrupt() {
